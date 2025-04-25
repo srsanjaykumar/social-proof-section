@@ -14,17 +14,21 @@
 }
 
 body {
+  background: url("images/bg-pattern-top-desktop.svg"), url("images/bg-pattern-bottom-desktop.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: top 0 left 0, bottom 0 right 0;
+  /* background-size:  50% 90%; */
   font-family: "League Spartan", sans-serif;
-  background-color: var(--light-grayish-magenta);
+  /* background-color: var(--light-grayish-magenta); */
   /* height: 100vh; */
   /* width: 100vw; */
 }
 
 .container {
-  /* background-color: black; */
+  background-color: rgba(255, 255, 255, 0);
   margin: 10%;
   height: fit-content;
-  max-width: 1200px;
+  max-width: 1050px;
 }
 header {
   display: flex;
@@ -32,7 +36,7 @@ header {
 }
 h1 {
   color: var(--very-dark-magenta);
-  font-size: 3rem;
+  font-size: 2.8rem;
   width: 60%;
 }
 p {
@@ -73,7 +77,7 @@ p {
 }
 
 .star {
-  background-color: #efe1f1;
+  background-color: #e6d4e9;
   color: var(--very-dark-magenta);
 }
 
@@ -93,9 +97,11 @@ p {
   right: 0%;
 }
 
+
 .card{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     
 }
 img{
@@ -121,7 +127,7 @@ img{
     width: 50%;
     height: 10%;
 }
-h4{
+.card h4{
     margin-top: 0.3rem;
     color: var(--white);
     font-size: 1rem;
@@ -139,4 +145,10 @@ h4{
     line-height: 1rem;
     margin: 0;
     margin-top: 1rem;
+}
+.two{
+  margin-top: 1rem;
+}
+.three{
+  margin-top: 2rem;
 }
